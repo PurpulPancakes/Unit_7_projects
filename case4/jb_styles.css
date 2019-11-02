@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author: Marcus Tinney
+   Date: 11/1/2019        
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+img{
+   width: 5%;
+}
+html{
+   background: black;
+   background-size: cover;
+   text-align: center;
+}
+@keyframes ahhh {
+   0% { transform: rotateX(35deg) rotateY(0deg) translateY(900px); }
+   100% { transform: rotateX(35deg) rotateY(0deg) translateY(-5000px); }
+}
+body{
+   background: radial-gradient(circle closest-corner at 10% 60%, 
+   white 0.5%, rgba(0, 0, 0, 0.0) 2%), radial-gradient(circle closest-corner at 80% 50%, 
+   white 0.5%, rgba(0, 0, 0, 0.0) 2%), radial-gradient(circle closest-corner at 20% 40%, 
+   white 0.5%, rgba(0, 0, 0, 0.0) 2%), radial-gradient(circle closest-corner at 70% 34%, 
+   white 0.5%, rgba(0, 0, 0, 0.0) 2%), radial-gradient(circle closest-corner at 90% 43%, 
+   white 0.5%, rgba(0, 0, 0, 0.0) 2%), radial-gradient(circle closest-corner at 6% 46%, 
+   white 0.5%, rgba(0, 0, 0, 0.0) 2%);
+   -webkit-perspective: 341px;
+   perspective: 341px;
+}
+p{
+   font-family: Impact;
+   font-size: 1.2em;
+   color: yellow;
+   -webkit-transform: rotateX(35deg) rotateY(0deg);
+   transform: rotateX(35deg) rotateY(0deg);
+   animation: ahhh 200s infinite;
+}
